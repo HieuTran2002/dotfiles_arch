@@ -1,3 +1,3 @@
-# dotfiles_arch
-# dotfiles_arch
-# dotfiles_arch
+# Configuration for my personal Arch linux setup.
+
+

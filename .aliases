@@ -1,0 +1,81 @@
+# shortcut
+alias dl="~/Downloads"
+alias cf="~/.config"
+alias pic="$HOME/Pictures"
+alias vid="$HOME/Videos"
+alias home="$HOME"
+alias c="clear"
+alias rg="ranger"
+
+
+# app
+alias nv="nvim"
+
+
+#bluetooth
+alias blue-on="sudo systemctl start bluetooth.service"
+alias blue-off="sudo systemctl stop bluetooth.service"
+
+# nmcli 
+alias nets="nmcli con show"
+alias netu="nmcli con up"
+
+# auto-cpufreq
+alias cpu="sudo auto-cpufreq --stats"
+
+
+# ls
+alias l="lsd"
+alias lsh="ls -lh -lS -r"
+alias lsl="ls -ltr"
+
+# grep
+alias installed-grep="apt list --installed | grep -i "
+
+# apt 
+# alias purge="sudo apt purge"
+# alias install="sudo apt install"
+# alias update="sudo apt update"
+
+# pacman
+alias purge="sudo pacman -Runs "
+alias install="sudo pacman -S "
+alias update="sudo pacman -Su"
+alias search="pacman -Ss"
+
+
+# directory
+alias cd-obsidian="/media/theuser/mount/Documents/Obsidian/My Vault"
+alias cd-f="/media/theuser/mount/Documents"
+alias cd-d="/media/theuser/mount/Downloads"
+alias cd-e="/media/theuser/mount/'NewVolume'"
+alias cd-toeic="/media/theuser/mount/Documents/Documents/'TOEIC 33'"
+alias cd-book="/media/theuser/mount/Documents/Documents/Book"
+alias cd-wallpaper-local="/home/theuser/Pictures/wallpaper"
+alias cd-wallpaper-F="/media/theuser/mount/Documents/background"
+alias cd-cpp="/media/theuser/mount/Documents/Code/Cpp"
+alias cd-python="/media/theuser/mount/Documents/Code/python"
+alias cd-go="/media/theuser/mount/Documents/Code/go"
+
+## code
+
+## copy current path
+
+# service control
+
+# tmux redefine
+alias tmux-config="tmux new-session -c ~/.config -s config"
+alias tmux-main="tmux new-session -s Main"
+alias tmux-cpp="tmux new-session -c /media/theuser/mount/Documents/Code/Cpp -s Cpp-with-me \; split-window -dh -p 30"
+alias tmux-go="tmux new-session -c /media/theuser/mount/Documents/Code/go -s Go-with-me \; split-window -dh -p 30"
+alias tmux-reattact="tmux a -t "
+alias tmux-python="tmux new-session -c /media/theuser/mount/Documents/Code/python -s Python-with-me" 
+
+# golang
+alias getgo="export PATH=$PATH:/usr/local/go/bin"
+
+# pulseaudio
+alias unmute="amixer set Master unmute"
+
+# check memory usage
+alias topmem="top -o %MEM -E g"

@@ -1,4 +1,4 @@
-# shortcut
+#shortcut
 alias dl="~/Downloads"
 alias cf="~/.config"
 alias pic="$HOME/Pictures"
@@ -7,6 +7,8 @@ alias home="$HOME"
 alias c="clear"
 alias rg="ranger"
 
+# mount USB 
+alias mount-usb="sudo mount /dev/sdb1 /media/theuser/mount/USB"
 
 # app
 alias nv="nvim"
@@ -79,3 +81,7 @@ alias unmute="amixer set Master unmute"
 
 # check memory usage
 alias topmem="top -o %MEM -E g"
+
+# python
+alias py="python3"
+

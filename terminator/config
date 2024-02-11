@@ -49,6 +49,6 @@
     [[[child1]]]
       type = Terminal
       parent = window0
-      profile = Catppuccin_Mocha
+      profile = Dracula
       command = ""
 [plugins]

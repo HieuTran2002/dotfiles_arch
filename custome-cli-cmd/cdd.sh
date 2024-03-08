@@ -43,7 +43,7 @@ fuction cdd()
             ;;
 
         "cpp")
-            cd "/media/theuser/mount/Documents/Code/cpp"
+            cd "/media/theuser/mount/Documents/Code/Cpp"
             ;;
 
         "go")

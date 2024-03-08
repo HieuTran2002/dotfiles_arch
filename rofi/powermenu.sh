@@ -70,7 +70,7 @@ run_cmd() {
 		elif [[ $1 == '--suspend' ]]; then
 			mpc -q pause
 			amixer set Master mute
-			systemctl suspend
+			i3lock -i ~/Pictures/wallpapers/tensura2_1920x1080.png | systemctl suspend
 		elif [[ $1 == '--logout' ]]; then
 			if [[ "$DESKTOP_SESSION" == 'openbox' ]]; then
 				openbox --exit
@@ -100,7 +100,8 @@ case ${chosen} in
 		if [[ -x '/usr/bin/betterlockscreen' ]]; then
 			betterlockscreen -l
 		elif [[ -x '/usr/bin/i3lock' ]]; then
-			i3lock -i ~/Pictures/wallpapers/arch2_lockscreen.png
+			i3lock -i ~/Pictures/wallpapers/tensura2_1920x1080.png
+			# i3lock -i ~/Pictures/wallpapers/slime4.png
 		fi
         ;;
     $suspend)

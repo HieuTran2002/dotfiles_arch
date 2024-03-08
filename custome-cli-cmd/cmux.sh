@@ -1,7 +1,12 @@
 #!/bin/bash
 
 # List of pre-set session names
-SESSIONS=("main" "python-with-me" "cpp-with-me")
+SESSIONS=(  
+    "main"
+    "python-with-me" 
+    "cpp-with-me"
+    "web-with-me"
+)
 
 # Function to start a tmux session based on the given session name
 start_session() {
@@ -11,7 +16,7 @@ start_session() {
         "main")
             tmux new-session -s "$session_name" -n "Term" \; new-window -n "Doc" \; new-window -n "Tensura" \; select-window -t 1
             ;;
-        "python-with-me" | "cpp-with-me")
+        "python-with-me" | "cpp-with-me" | "web-with-me")
             tmux new-session -s "$session_name" -n "Term" \; new-window -n "Neovim"\; select-window -t 1
             ;;
         *)

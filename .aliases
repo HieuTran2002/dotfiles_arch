@@ -42,7 +42,7 @@ alias installed-grep="apt list --installed | grep -i "
 # pacman
 alias purge="sudo pacman -Runs "
 alias install="sudo pacman -S "
-alias update="sudo pacman -Su"
+alias update="sudo pacman -Su "
 alias search="pacman -Ss"
 
 

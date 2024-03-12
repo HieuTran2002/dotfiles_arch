@@ -6,6 +6,7 @@ alias vid="$HOME/Videos"
 alias home="$HOME"
 alias c="clear"
 alias rg="ranger"
+alias quicksetup-python="cd /media/theuser/mount/Documents/Code/python/TestBallTrackig ; source virt/bin/activate"
 
 # mount USB 
 alias mount-usb="sudo mount /dev/sdb1 /media/theuser/mount/USB"

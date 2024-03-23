@@ -31,31 +31,31 @@ fuction cdd()
 {
     case "$1" in
         "python")
-            cd "/media/theuser/mount/Documents/Code/python"
+            cd "/media/theuser/mount/documents/Code/python"
             ;;
 
         "book")
-            cd "/media/theuser/mount/Documents/Documents/Book"
+            cd "/media/theuser/mount/documents/Documents/Book"
             ;;
 
         "ln")
-            cd "/media/theuser/mount/Documents/Documents/Book/LightNovel"
+            cd "/media/theuser/mount/documents/Documents/Book/LightNovel"
             ;;
 
         "cpp")
-            cd "/media/theuser/mount/Documents/Code/Cpp"
+            cd "/media/theuser/mount/documents/Code/Cpp"
             ;;
 
         "go")
-            cd "/media/theuser/mount/Documents/Code/go"
+            cd "/media/theuser/mount/documents/Code/go"
             ;;
 
         "robo2")
-            cd "/media/theuser/mount/Documents/Code/python/robo2"
+            cd "/media/theuser/mount/documents/Code/python/robo2"
             ;;
             
         "obsidian")
-            cd "/media/theuser/mount/Documents/Obsidian/My Vault"
+            cd "/media/theuser/mount/documents/Obsidian/My Vault"
             ;;
 
         "nvim")
@@ -71,15 +71,15 @@ fuction cdd()
             ;;
 
         "toeic")
-            cd "/media/theuser/mount/Documents/Documents/TOEIC 33/document"
+            cd "/media/theuser/mount/documents/Documents/TOEIC 33/document"
             ;;
 
         "todo")
-            cd "/media/theuser/mount/Documents/Obsidian/My Vault/Daily Note"
+            cd "/media/theuser/mount/documents/Obsidian/My Vault/Daily Note"
             ;;
 
         "webdev")
-            cd "/media/theuser/mount/Documents/Code/webDev"
+            cd "/media/theuser/mount/documents/Code/webDev"
             ;;
         *)
             ;;

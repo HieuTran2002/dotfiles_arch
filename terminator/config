@@ -2,6 +2,7 @@
   enabled_plugins = LaunchpadBugURLHandler, LaunchpadCodeURLHandler, APTURLHandler, TerminatorThemes
   always_split_with_profile = True
 [keybindings]
+  group_all = <Shift><Alt>g
 [profiles]
   [[default]]
     background_darkness = 1.0

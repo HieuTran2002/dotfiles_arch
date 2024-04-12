@@ -45,7 +45,7 @@ window#waybar {
     color: #E8A2AF;
 }
 
-#custom-arch, #memory, #clock, #backlight, #pulseaudio, #bluetooth, #network, #battery{
+#custom-arch, #tray, #memory, #clock, #backlight, #pulseaudio, #bluetooth, #network, #battery{
     border-radius: 10px;
     background-color: #11111b;
     color: #cdd6f4;

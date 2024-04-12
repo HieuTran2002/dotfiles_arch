@@ -32,9 +32,6 @@ alias l="lsd"
 alias lsh="ls -lh -lS -r"
 alias lsl="ls -ltr"
 
-# grep
-alias installed-grep="apt list --installed | grep -i "
-
 # apt 
 # alias purge="sudo apt purge"
 # alias install="sudo apt install"
@@ -76,6 +73,9 @@ alias tmux-python="tmux new-session -c /media/theuser/mount/Documents/Code/pytho
 
 # golang
 alias getgo="export PATH=$PATH:/usr/local/go/bin"
+
+# get python virtual enviroment
+alias sourcepython="source /media/theuser/mount/documents/Code/python/env/bin/activate"
 
 # pulseaudio
 alias unmute="amixer set Master unmute"

@@ -102,7 +102,7 @@ function blue-reset {
 function blue-connect 
 {
 
-    mute
+    # mute
     bluetoothctl connect $HEADSET
 
     # if no connection, wait
@@ -111,7 +111,7 @@ function blue-connect
     sleep 1
     pactl -- set-sink-volume $(pactl list short sinks | grep -i "bluez" | awk '{print $1}') 20%
 
-    unmute
+    # unmute
 
     echo "Done"
 }

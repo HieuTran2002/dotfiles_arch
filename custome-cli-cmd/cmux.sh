@@ -14,7 +14,7 @@ start_session() {
     
     case "$session_name" in
         "main")
-            tmux new-session -s "$session_name" -n "Term" \; new-window -n "Doc" \; new-window -n "Tensura" \; select-window -t 1
+            tmux new-session -s "$session_name" -n "Term" \; new-window -n "Tensura" \; select-window -t 1
             ;;
         "python-with-me" | "cpp-with-me" | "web-with-me")
             tmux new-session -s "$session_name" -n "Term" \; new-window -n "Neovim"\; select-window -t 1

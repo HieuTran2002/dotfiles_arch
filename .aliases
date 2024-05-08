@@ -22,6 +22,8 @@ alias blue-off="sudo systemctl stop bluetooth.service"
 # nmcli 
 alias nets="nmcli con show"
 alias netu="nmcli con up"
+alias netl="nmcli dev wifi rescan ; nmcli dev wifi list"
+alias netc="nmcli dev wifi connect "
 
 # auto-cpufreq
 alias cpu="sudo auto-cpufreq --stats"

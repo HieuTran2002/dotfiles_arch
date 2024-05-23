@@ -32,7 +32,7 @@ alias cpu="sudo auto-cpufreq --stats"
 # ls
 alias l="lsd"
 alias lsh="ls -lh -lS -r"
-alias lsl="ls -ltr"
+alias lsl="ls -ltrh" 
 
 # apt 
 # alias purge="sudo apt purge"

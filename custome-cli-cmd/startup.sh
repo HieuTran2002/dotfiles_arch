@@ -28,6 +28,11 @@ function timeleft()
 
 timeleft
 
+function imvs()
+{
+    imv -t 1 "$1" $(ls "$(dirname "$1")" | sort -n)
+}
+
 # mute / unmute
 function mute()
 {

@@ -104,3 +104,9 @@ source ~/.config/.aliases
 source ~/.config/custome-cli-cmd/startup.sh
 source ~/.config/custome-cli-cmd/cdd.sh
 source ~/.config/custome-cli-cmd/cmux.sh
+source ~/.config/custome-cli-cmd/variable.sh
+
+# activate zoxide
+eval "$(zoxide init zsh)"
+# activate starship
+eval "$(starship init zsh)"

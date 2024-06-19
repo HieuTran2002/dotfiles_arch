@@ -1,5 +1,6 @@
 {
   "layer": "top",
+  "position": "bottom",
     "modules-left": ["custom/arch", "clock", "memory", "tray"],
     "modules-center": ["hyprland/workspaces"],
     "modules-right": ["backlight", "pulseaudio", "bluetooth", "network", "battery"],
@@ -33,7 +34,7 @@
       "format-icons": ["", "", "", "", "", "", "", "", ""]
     },
     "pulseaudio": {
-      "format": "<span color='#b4befe'>{icon}</span> {volume}%",
+      "format": "<span color='#b4befe'>{icon}</span>   {volume}%",
       "format-muted": "",
       "tooltip": false,
       "format-icons": {

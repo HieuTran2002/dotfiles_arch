@@ -3,6 +3,7 @@
 # List of pre-set session names
 SESSIONS=(  
     "main"
+    "code-with-me"
     "python-with-me" 
     "cpp-with-me"
     "web-with-me"
@@ -16,7 +17,7 @@ start_session() {
         "main")
             tmux new-session -s "$session_name" -n "Term" \; new-window -n "Tensura" \; select-window -t 1
             ;;
-        "python-with-me" | "cpp-with-me" | "web-with-me")
+        "code-with-me" | "python-with-me" | "cpp-with-me" | "web-with-me")
             tmux new-session -s "$session_name" -n "Term" \; new-window -n "Neovim"\; select-window -t 1
             ;;
         *)

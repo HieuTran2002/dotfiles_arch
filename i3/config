@@ -288,7 +288,7 @@ bar {
 		}
 	# font pango:hack nerd font 12
     font pango: jetbrainsmononl nerd font 12
-	position top
+	position bottom
 	tray_output primary
 }
 

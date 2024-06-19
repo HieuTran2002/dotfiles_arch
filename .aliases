@@ -88,3 +88,6 @@ alias topmem="top -o %MEM -E g"
 # python
 alias py="python3"
 
+
+# disk 
+alias mount_nobara="sudo mount /dev/nvme0n1p7 /media/theuser/mount/nobara"

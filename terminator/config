@@ -28,7 +28,7 @@
     background_color = "#1e1e2e"
     background_darkness = 1.0
     cursor_bg_color = "#f5e0dc"
-    font = JetBrainsMono Nerd Font Mono 22
+    font = JetBrainsMono Nerd Font Mono 18
     foreground_color = "#cdd6f4"
     show_titlebar = False
     scrollbar_position = hidden

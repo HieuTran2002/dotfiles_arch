@@ -22,6 +22,9 @@ vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><
 vim.keymap.set("n", "<leader>e", ":Neotree<CR>")
 
 
+vim.api.nvim_set_keymap('n', '<space>;', '$c;<Esc>', { noremap = true, silent = true })
+
+
 
 --- debugger keymap
 

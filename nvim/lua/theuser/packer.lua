@@ -39,10 +39,6 @@ return require('packer').startup(function(use)
   use( 'nvim-treesitter/nvim-treesitter', { run = ':TSUpdate'})
 
 
-  --- undotree
-  use 'mbbill/undotree'
-
-
   --- LSP
 
   use {
@@ -443,6 +439,12 @@ use {
     'nvimdev/lspsaga.nvim',
     after = 'nvim-lspconfig',
 }
+
+
+use { "lukas-reineke/indent-blankline.nvim" }
+
+use {"debugloop/telescope-undo.nvim"}
+
 end)
 
 

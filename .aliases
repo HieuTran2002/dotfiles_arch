@@ -76,18 +76,26 @@ alias tmux-python="tmux new-session -c /media/theuser/mount/Documents/Code/pytho
 # golang
 alias getgo="export PATH=$PATH:/usr/local/go/bin"
 
-# get python virtual enviroment
-alias sourcepython="source /media/theuser/mount/documents/Code/python/env/bin/activate"
-
 # pulseaudio
 alias unmute="amixer set Master unmute"
 
 # check memory usage
 alias topmem="top -o %MEM -E g"
 
-# python
-alias py="python3"
-
 
 # disk 
 alias mount_nobara="sudo mount /dev/nvme0n1p7 /media/theuser/mount/nobara"
+
+# rust 
+alias cr="cargo run"
+alias cb="cargo build"
+
+# git 
+alias gs="git status"
+alias gc="git commit -m"
+alias gaa="git add -A"
+alias ga="git add "
+alias ga="git add "
+alias gp="git push"
+
+

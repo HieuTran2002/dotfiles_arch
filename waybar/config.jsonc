@@ -15,8 +15,8 @@
     "modules-right": [
         "backlight",
         "pulseaudio",
-        "disk",
         "clock",
+        "disk",
     ],
     "wlr/taskbar": {
         "on-click": "activate",

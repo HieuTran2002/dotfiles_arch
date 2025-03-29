@@ -1,0 +1,27 @@
+{
+    "name": "example-snippets",
+    "contributes": {
+        "snippets": [
+            {
+                "language": [ "all" ],
+                "path": "./lan/all.json"
+            },
+            {
+                "language": [ "lua" ],
+                "path": "./lan/lua.json"
+            },
+            {
+                "language": [ "go" ],
+                "path": "./lan/go.json"
+            },
+            {
+                "language": [ "c", "cpp" ],
+                "path": "./lan/c.json"
+            },
+            {
+                "language": [ "c", "cpp"],
+                "path": "./lan/cdoc.json"
+            }
+        ]
+    }
+}

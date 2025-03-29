@@ -1,0 +1,47 @@
+#shortcut
+alias dl="~/Downloads"
+alias cf="~/.config"
+alias pic="$HOME/Pictures"
+alias vid="$HOME/Videos"
+alias home="$HOME"
+alias c="clear"
+alias e="exit"
+alias rg="ranger"
+alias ram="free -hm"
+
+alias disk-uuid="lsd -lha /dev/disk/by-uuid"
+
+# app
+alias nv="nvim"
+
+#bluetooth
+alias blue-on="sudo systemctl start bluetooth.service"
+alias blue-off="sudo systemctl stop bluetooth.service"
+
+# nmcli 
+alias nets="nmcli con show"
+alias netu="nmcli con up"
+alias netr="nmcli dev wifi rescan ; nmcli dev wifi list"
+alias netc="nmcli dev wifi connect "
+
+# auto-cpufreq
+alias cpu="sudo auto-cpufreq --stats"
+
+# ls
+alias l="lsd -a"
+alias ll="lsd -l"
+alias lsh="ls -hSr"
+alias lsl="ls -trh" 
+
+# apt 
+alias purge="sudo pacman -Runs"
+alias install="sudo pacman -S"
+alias update="sudo pacman -Sy"
+alias upgrade="sudo pacman -Su"
+alias search="sudo pacman -Ss"
+
+# check memory usage
+alias topmem="top -o %MEM -E g"
+
+alias getidf=". $HOME/esp/esp-idf/export.sh"
+alias idf="idf.py"

@@ -1,0 +1,138 @@
+{
+    "layer": "top",
+    "position": "top",
+    "spacing": 4,
+    "modules-left": [
+        "custom/logo",
+        "tray",
+        "memory",
+        "cpu",
+        "battery",
+    ],
+    "modules-center": [
+        "hyprland/workspaces",
+    ],
+    "modules-right": [
+        "backlight",
+        "pulseaudio",
+        "clock",
+        "disk",
+    ],
+    "wlr/taskbar": {
+        "on-click": "activate",
+        "on-click-middle": "close",
+        "ignore-list": [
+            "foot"
+        ]
+    },
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "all-outputs": false,
+        "active-only:": true,
+        "format-icons": {
+            "1": "󱞁",
+            "2": "",
+            "3": "󰈹",
+            "4": "󱎓",
+            "5": "5",
+            "11": "",
+            "12": "12",
+            "13": "13",
+            "14": "14",
+            "15": "15",
+        },
+        "persistent-workspaces": {
+            // "eDP-1": [1,2,3,4],
+            // "HDMI-A-1": [11,12,13]
+        }
+    },
+    "sway/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": false,
+        "format": "{icon}",
+        "format-icons": {
+            "1": "",
+            "2": "",
+            "3": "",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "11": "",
+            "12": "12",
+            "13": "13",
+            "high-priority-named": [ "1", "2" ],
+            "urgent": "",
+            "focused": "",
+            "default": ""
+        },
+        "persistent-workspaces": {
+            "1": ["eDP-1"],
+            "2": ["eDP-1"],
+            "3": ["eDP-1"],
+            "11": ["HDMI-A-1"],
+            "12": ["HDMI-A-1"],
+            "13": ["HDMI-A-1"],
+
+        }
+    },
+    "sway/window": {
+        "format": "{}",
+        "max-length": 50,
+        "rewrite": {
+            "(.*) - Mozilla Firefox": "🌎 $1",
+            "(.*) - zsh": "> [$1]"
+        }
+    },
+    "cpu": {
+        "interval": 2,
+        "format": "{usage:>2}% ",
+        "max-length": 10
+    },
+    "pulseaudio": {
+        "format-icons": ["", "", ""],
+		"format": "{icon}  {volume}%",
+        "format-muted": "󰖁 Muted ",
+    },
+    "battery": {
+        "interval": 60,
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon} ",
+        "format-icons": ["", "", "", "", ""],
+        "max-length": 25
+    },
+    "memory": {
+      "interval": 5,
+      "format": "{used:0.1f}G  "
+    },
+    "clock": {
+      "format": "  {:%H:%M %m-%d}",
+      "calendar": {
+          "format": {
+              "today": "<span color='#82cfff'><b><u>{}</u></b></span>"
+          }
+      },
+      "tooltip-format": "<big>{:%Y %B}</big>\n<tt>{calendar}</tt>"
+    },
+    "tray": {
+        "icon-size": 21,
+        "spacing": 10
+    },
+    "disk": {
+        "interval": 30,
+        "unit": "GB",
+        "format": " {specific_used:0.1f}G ",
+    },
+    "custom/logo":{
+        "format": " ",
+    },
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "{percent}% {icon}",
+        "format-icons": ["󰌶", "󱩐", "󱩔", "󰛨"],
+        "on-scroll-down": "brightnessctl -c backlight set 5%-",
+        "on-scroll-up": "brightnessctl -c backlight set +5%"
+    },
+}

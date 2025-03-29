@@ -1,0 +1,99 @@
+@define-color   black  #282828;
+@define-color   gray1  #262626;
+@define-color   gray2  #393939;
+@define-color   gray3  #525252;
+@define-color   gray4  #dde1e6;
+@define-color   gray5  #f2f4f8;
+@define-color   white  #ffffff;
+@define-color   cyan1  #08bdba;
+@define-color   cyan2  #3ddbd9;
+@define-color   blue1  #78a9ff;
+@define-color   magenta  #ee5396;
+@define-color   blue2  #33b1ff;
+@define-color   pink  #ff7eb6;
+@define-color   green  #42be65;
+@define-color   purple  #be95ff;
+@define-color   neon  #82cfff;
+
+
+* {
+    border-radius: 0;
+    font-family: JetBrainsMono Nerd Font;
+    font-size: 11pt;
+    min-height: 0;
+}
+
+window#waybar {
+    background: transparent;
+    color: #282828;
+}
+
+tooltip {
+    background: @black;
+    border-radius: 15px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: @green;
+}
+
+#workspaces {
+    background: #282828;
+    margin-left: 5px;
+    margin-top: 5px;
+    border-radius: 15px;
+}
+
+#workspaces button {
+    padding-left: 5px;
+    padding-right: 9px;
+    min-width: 0;
+    color: #f2f4f8;
+}
+
+#workspaces button.active {
+    color: @neon;
+}
+#workspaces button.focused {
+    color: @neon;
+    font-weight: bold;
+}
+#workspaces button.urgent {
+    color: #be95ff;
+}
+
+#workspaces button:hover {
+    background: #282828;
+    border-color: #282828;
+    color: #f16da6;
+}
+
+#backlight, #custom-logo, #disk, #cpu, #memory, #clock, #battery, #pulseaudio, #workspaces, #tray{
+    color: #f2f4f8;
+    padding: 0px 15px;
+    background: #282828;
+    margin-top: 5px;
+    border-radius: 10px 10px 10px 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: @pink;
+    opacity: 1;
+}
+
+
+#custom-logo {
+    color: @neon;
+    margin-left: 10px;
+    margin-right: 2px;
+}
+#clock {
+    margin-right: 10px;
+}
+
+
+#custom-media {
+    background: #282828;
+    margin-top: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 15px;
+}

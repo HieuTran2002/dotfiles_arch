@@ -14,10 +14,6 @@ alias disk-uuid="lsd -lha /dev/disk/by-uuid"
 # app
 alias nv="nvim"
 
-#bluetooth
-alias blue-on="sudo systemctl start bluetooth.service"
-alias blue-off="sudo systemctl stop bluetooth.service"
-
 # nmcli 
 alias nets="nmcli con show"
 alias netu="nmcli con up"
